@@ -18,6 +18,7 @@ return Application::configure(basePath: dirname(__DIR__))
 
         $middleware->validateCsrfTokens(except: [
             'http://my-notes-backend.test/register',
+            'http://my-notes-backend.test/login',
         ]);
 
         $middleware->alias([
